@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="silus.css">
+    <title>Medgyaszay Gergő</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Űrlap</h1>
+        </header>
+        <nav></nav>
+        <article>
+            <!-- űrlap - felhasználótól adatokat kérünk be.
+            Az adatokat adatbázisban fogjuk tárolni.
+            -->
+            <form>
+                <fieldset class="szemelyes">
+                    <legend>Személyes adatok</legend>
+                <div>
+                    <label for="nev">Név:</label>
+                    <input type="text" name="" id="nev" placeholder="Vezeték/Keresztnév">
+                </div>
+
+                <div>
+                    <label for="email">Email cím:</label>
+                    <input type="email" name="" id="email" placeholder="valaki@valami.com" pattern="^(?!.*\.\.)[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
+                    ">
+                </div>
+
+                <div>
+                    <label for="kartya">Bankszámlaszám:</label>
+                    <input type="text" name="" id="kartya" placeholder="***********">
+                </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Szokások</legend>
+                <p>Add meg a szemed színét:</p>
+                <div class="szemszin">
+                    
+                    
+                    <input type="radio" name="szemszín" id="barna">
+                    <label for="barna">barna</label> 
+                    <input type="radio" name="szemszín" id="kék">
+                    <label for="kék">kék</label>
+                    <input type="radio" name="szemszín" id="szürke">
+                    <label for="szürke">szürke</label>
+                    
+                </div>
+                
+                <p>Add meg a kedvenc étele(id)et:</p>
+                <div class="etelek">
+                    <label for="hal">Hal</label>
+                    <input type="checkbox" name="etelek" id="hal"> 
+                    <label for="hus">Hús</label>
+                    <input type="checkbox" name="etelek" id="hus">
+                    <label for="zoldseg">Zöldség</label>
+                    <input type="checkbox" name="etelek" id="zoldseg">
+                    
+                    
+                </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Válasszon szakot!</legend>
+                <select name="szak" id="szak">
+                    <option value="Szoftverfejlsztő">Szoftverfejlsztő</option>
+                    <option value="Rendszergazda">Rendszergazda</option>
+                    <option value="Grafikus">Grafikus</option>
+                    <option value="Épitész">Épitész</option>
+                </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Ijra meg a véleményét!</legend>
+                <p>Irja meg a véleményét!</p>
+                <textarea name="velemeny" id="velemeny"></textarea>
+                </fieldset>
+
+                <button type="submit"> Küldés</button>
+            </form>
+
+        </article>
+        <footer>
+
+        </footer>
+    </main>
+</body>
+</html>
